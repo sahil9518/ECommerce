@@ -18,7 +18,7 @@ const Jeweelproductdetail = ({cart,setcart}) => {
 
   const{id} =useParams()
   const {value} = useSelector((state) => state.jeweel)
-  console.log("val",value);
+  
   const dispatch=useDispatch()
 
 
@@ -53,7 +53,7 @@ const addtocart=(event,image,title,price,id)=>{
 
 
 
-  return value ? (
+  return value&&value ? (
     <div className="h-[100%]">
 
 <ToastContainer
