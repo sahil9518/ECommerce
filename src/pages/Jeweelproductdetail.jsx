@@ -5,12 +5,13 @@ import Footer from "../components/Footer"
 import Freedelivery from "../components/Freedelivery"
 
 import { useDispatch, useSelector } from "react-redux"
-import Loader from "../components/Loader"
+
 import { removeproduct } from "../store/reducer/JaweelSlice"
 import Form from 'react-bootstrap/Form';
 import { jeweelapi } from "../store/actions/jeweelasync"
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Loader from "../components/Loader"
 
 
 const Jeweelproductdetail = ({cart,setcart}) => {
