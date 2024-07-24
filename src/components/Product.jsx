@@ -42,25 +42,25 @@ transition: Bounce
 />
 
     <div>
-      <div className="text-4xl font-semibold text-center my-3 text-zinc-600">
+      <div className="lg:text-4xl text-2xl font-semibold text-center my-3 text-zinc-600">
         Explore Our Products
       </div>
     </div>
 
-      <div className="flex flex-wrap justify-center gap-5 py-4">
+      <div className="w-full gap-[2%] sm:gap-10 justify-center flex flex-wrap p-2 flex-row py-4">
         {data &&
           data.map((cv) => {
             return (
               <>
                 <Link key={cv.id} to={`/${cv.category}/detail/${cv.id}`}
-                  className="border-2 w-[300px] py-8 px-3 hover:scale-105 hover:duration-500"
+                  className="border-2 mt-2 sm:w-[290px]  w-[48%] bg-white py-8 px-3 hover:scale-105 hover:drop-shadow-2xl  rounded-lg hover:duration-500"
                   onClick={(event)=>{outerlink(event)}}
                 >
                   <div className="w-[100%] h-[100%]">
                     <img
                       src={cv.image}
                       alt="pic"
-                      className="w-[20vw] h-[13vw] "
+                      className="h-[160px] mix-blend-multiply w-[200px] sm:h-[220px] p-3 object-center  "
                     />
                     <div>
                       <div>
@@ -68,7 +68,7 @@ transition: Bounce
                           {cv.title}
                         </p>
                       </div>
-                      <div className="bg-[#CC0C39] inline p-1 text-[0.7vw] font-semibold text-white m">
+                      <div className="bg-[#CC0C39] inline p-1 text-[10px] font-semibold text-white m">
                         Limited Time Deal
                       </div>
                       <div className="font-semibold my-2">
